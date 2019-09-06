@@ -1,0 +1,187 @@
+/*
+Title: Simple Blog
+Technologies: HTML5, CSS3
+Author: Nawras Ali
+Date: 2019-09-06
+*/
+
+body{
+  background-color: #f4f4f4;
+  color: #3e4444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0px;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.clear{
+  clear:both;
+}
+a.button{
+  background-color: #405d27;
+  text-decoration: none;
+  color: #fff;
+  padding:5px;
+}
+
+a.button:hover{
+  background-color: #c1946a;
+  color: #3e4444
+}
+
+#main-header{
+  background-color: #405d27;
+  color: #fff;
+}
+
+nav{
+  background-color: #c1946a;
+  color: #000;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li{
+  display: inline;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #3e4444;
+  font-size: 1.3em;
+  padding-right: 0.3em;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  color: #405d27;
+}
+
+#main{
+  float: left;
+  width: 70%;
+  margin-top: 5px;
+  border-right: 1px dotted #405d27;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+
+#main article{
+  border-bottom: 2px solid #405d27;
+  padding: 3px;
+}
+
+#main article h3{
+  color: #405d27;
+}
+
+#main article h3 a{
+  color: #405d27;
+  text-decoration: none;
+}
+
+#main article h3 a:hover{
+  color: #c1946a
+}
+
+#sidebar{
+  float:right;
+  width: 30%;
+  margin-top: 5px;
+  padding-left:5px;
+  box-sizing: border-box;
+}
+
+.widget{
+  border-bottom: 2px dotted #c1946a;
+  padding-left: 2px;
+}
+
+.widget h4{
+  background: #c1946a;
+  color: #3e4444;
+  padding:5px;
+  text-align: center;
+}
+
+.widget ul{
+  list-style: none;
+}
+
+.tags-widget ul{
+  padding: 0;
+}
+
+.tags-widget ul li{
+  display: inline;
+  padding-right:2px;
+}
+.widget li a {
+  text-decoration: none;
+  color: #405d27;
+}
+
+.widget li a:hover{
+  color: #c1946a;
+  font-weight: bold;
+}
+
+#post-header{
+  background-color: #405d27;
+  color: #fff;
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+
+#post-header h1{
+  font-size: 2.5em;
+  line-height: 1.6em;
+  text-align: center;
+  padding-top: 20px;
+}
+
+form{
+  border: 2px dotted #405d27;
+  padding: 10px;
+}
+
+form .form-group{
+  padding-bottom: 20px;
+}
+
+form label{
+  display: block;
+}
+
+form input[type="text"],
+form textarea{
+  width: 90%;
+  padding-right: 20px;
+}
+
+#main-footer{
+  width: 100%;
+  padding: 10px;
+  background: #405d27;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media(max-width:600px){
+
+  #main, #sidebar{
+    width: 100%;
+    float: none;
+  }
+
+}
