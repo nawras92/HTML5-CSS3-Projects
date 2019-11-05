@@ -4,3 +4,400 @@ Technologies: HTML5, CSS3
 Author: Nawras Ali
 Date: 2019-11-01
 */
+
+:root {
+  --primary-color: #618685;
+  -secondary-color: #f4f4f4;
+  --light-color: #deeaee;
+  --dark-color: #333;
+  --max-widht: 90%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--light-color);
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.55rem;
+  line-height: 1.3;
+}
+
+/* Utility */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.l-heading {
+  font-size: 2rem;
+}
+
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+  background: var(--primary-color);
+}
+
+.category:hover {
+  opacity: 0.7;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--dark-color);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-light {
+  background: var(--light-color);
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+/* Navigation */
+#main-nav {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem;
+  align-items: center;
+}
+
+#main-nav .logo {
+  width: 200px;
+}
+
+#main-nav ul {
+  justify-self: end;
+  display: flex;
+}
+
+#main-nav ul li a {
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+#main-nav ul li a.current {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+#main-nav ul li a:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* Featured Post */
+#featured {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#featured:before {
+  content: '';
+  background: url('img/img4.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#featured .featured-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+#featured .featured-content {
+  z-index: 1;
+}
+
+#featured .featured-content p {
+  margin-bottom: 1rem;
+}
+
+/* Blog Posts */
+#blog-posts .posts-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+#blog-posts .posts-container .card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.2rem;
+  align-items: center;
+}
+
+#blog-posts .posts-container .card .thumbnail {
+  width: 100%;
+  height: 250px;
+  padding-right: 1rem;
+}
+
+.card a:hover {
+  color: var(--primary-color);
+}
+
+/* Post */
+#post .meta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#post .meta .category{
+  margin-top: 0.4rem;
+}
+
+#post .post-thumbnail{
+  width: 100%;
+  height: 400px;
+}
+/* Page */
+.page-container,
+.post-container {
+  display: grid;
+  grid-template-columns: 7fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.page-container>*:first-child,
+.post-container>*:first-child{
+  grid-row: 1/ span 12;
+}
+
+/* Aside */
+aside{
+  margin-bottom: 1rem;
+}
+
+aside li {
+  padding: 0.5rem;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
+
+aside li a:hover {
+  color: var(--primary-color) !important;
+}
+
+/* category */
+.category-container{
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  margin: 1rem 0;
+  grid-gap: 1.5rem;
+}
+
+.category-posts .card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap:: 1rem;
+}
+
+.category-posts .card .thumbnail {
+  width: 100%;
+  height: 250px;
+  padding-right: 1rem;
+}
+
+#category-heading {
+  color: #fff;
+  background: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#category-heading:before {
+  content: '';
+  background: var(--primary-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#category-heading .category-heading-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+#category-heading .category-heading-content {
+  z-index: 1;
+}
+
+/* Footer */
+#main-footer {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+#main-footer a {
+  color: #fff;
+}
+
+#main-footer .footer-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+#main-footer .footer-container>*:last-child {
+  background: #444;
+  grid-column: 1/ span 3;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+#main-footer .footer-container input[type='email'] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type='submit'] {
+  width: 90%;
+}
+
+.clean-fwidget li {
+  padding: 0.5rem;
+  border-bottom: #555 dotted 1px;
+  width: 90%;
+}
+
+.clean-fwidget li a:hover {
+  color: var(--primary-color) !important;
+}
+
+
+/* Responsive */
+@media(max-width: 768px){
+  #main-nav .container{
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+  }
+  #main-nav .logo,
+  #main-nav ul{
+    justify-self: center;
+  }
+  #featured .featured-container,
+  #blog-posts .posts-container,
+  #main-footer .footer-container,
+  #blog-posts .posts-container,
+  #blog-posts .posts-container .card,
+  .page-container,
+  .post-container,
+  .category-container,
+  .category-posts .card,
+  #category-heading .category-heading-container
+  {
+    grid-template-columns: 1fr;
+  }
+
+  #main-footer .footer-container>*:last-child {
+    grid-column: 1;
+  }
+  #main-footer .footer-container > *{
+    border-bottom: #444 dotted 1px;
+    padding-bottom: 1rem;
+  }
+}
