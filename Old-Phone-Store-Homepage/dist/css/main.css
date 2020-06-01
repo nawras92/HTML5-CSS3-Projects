@@ -178,13 +178,22 @@ img {
 
 @media screen and (min-width: 900px) {
   .item-price {
-    margin-top: 1rem;
+    margin: 0.5rem auto;
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .item-price {
+    font-size: 2rem;
   }
 }
 
 .item-title {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 600px) {
@@ -195,14 +204,36 @@ img {
 
 @media screen and (min-width: 800px) {
   .item-title {
-    margin-top: 4rem;
+    margin-top: 1rem;
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (min-width: 900px) {
   .item-title {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .item-title {
+    margin: 1rem auto;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-title {
+    margin: 1.5rem auto;
     font-size: 3rem;
-    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .item-title {
+    margin: 2rem auto;
+    font-size: 3rem;
   }
 }
 
@@ -216,9 +247,15 @@ img {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   .item-category {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .item-category {
+    font-size: 2rem;
   }
 }
 
@@ -243,10 +280,17 @@ img {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   .item-btn {
-    margin: 1rem auto;
-    font-size: 1.5rem;
+    margin: 0.2rem auto;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .item-btn {
+    margin: 2rem auto;
+    font-size: 2rem;
   }
 }
 
@@ -397,6 +441,7 @@ input[id="nav-btn-1"]:checked ~ .header-nav {
   position: absolute;
   top: -9999px;
   left: -9999px;
+  z-index: 100;
 }
 
 @media screen and (min-width: 800px) {
